@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "debug": "gulp"
+    "debug": "gulp",
+    "app": "gulp"
   },
   "author": "",
   "license": "ISC",

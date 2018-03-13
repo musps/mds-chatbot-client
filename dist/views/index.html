@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="./lib/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/css.css" />
+
+  </head>
+  <body>
+
+<div class="main-bloc">
+
+  <div class="right-column">
+
+    <!--- CHAT MESSAGES -->
+    <div class="chat-content"></div>
+    <!--- .\CHAT MESSAGES -->
+
+    <!--- CHAT BAR -->
+    <div class="chat-bar">
+      <div class="input-group input-group-lg">
+        <input 
+          type="text" 
+          class="form-control resetBorderRadius inputSendMessage" 
+          aria-label="Large" 
+          aria-describedby="inputGroup-sizing-sm" />
+      </div>
+    </div>
+    <!--- .\ CHAT BAR -->
+
+  </div>
+  
+</div>
+
+
+  <!-- TEMPLATE HTML -->
+  <template id="template-message-left">
+    <div class="message-global message-left">
+      <label class="labelUserName">@{username}</label>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">{msg}</p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="template-message-right">
+    <div class="message-global message-right">
+      <label class="labelUserName">@{username}</label>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">{msg}</p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="template-system-right">
+    <div class="message-global message-right">
+      <label class="labelUserName">@{username}</label>
+      <div class="alert" role="alert">
+        {msg}
+      </div>
+    </div>
+  </template>
+
+
+  <template id="template-uber-right">
+    <div class="message-global message-right">
+      <label class="labelUserName">@{username}</label>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">{msg}</p>
+        </div>
+        <div class="card-body contentMap"></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="template-youtubePlayer-right">
+    <div class="message-global message-right">
+      <label class="labelUserName">@Youtube</label>
+      <div class="card">
+        <div class="card-body">
+          <iframe 
+            id="playerYoutube" type="text/html" width="640" height="360"
+            src="null"
+            frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </template>
+  <!-- .\ TEMPLATE -->
+
+  <script 
+    type="text/javascript" 
+    src="./assets/js/main.js"></script>
+
+  </body>
+</html>
